@@ -1,0 +1,14 @@
+name: Git workshop CI
+on:
+  push:
+    branches:
+      - feature/*
+      - bugfix/*
+      - chore/*
+      - main
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Git workshop CI job running..."
